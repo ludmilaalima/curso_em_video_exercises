@@ -43,4 +43,12 @@ public class Grasshopper extends Person {
     public void setTotalWatched(int totalWatched) {
         this.totalWatched = totalWatched;
     }
+
+    @Override
+    public String getName(){
+            return super.getName();
+
+    }
+
+
 }

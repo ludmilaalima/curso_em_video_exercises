@@ -1,18 +1,15 @@
-/*import java.util.Arrays;
-
 public class App {
     public static void main(String[] args) throws Exception {
-        Video vetorVideos[] = new Video[2];
-        vetorVideos[0] = new Video();
-        vetorVideos[1] = new Video();
 
-        vetorVideos[0].setTitle("Aula de python");
-        vetorVideos[1].setTitle("Aula de java");
+        Grasshopper person = new Grasshopper("ludmila@gmail.com", "123", 0);
+        person.setName("Ludmila");
+        Video film = new Video("As branquelas");
+        Video film1 = new Video("O auto da compadecida");
 
-        Gafanhoto gafanhoto[] = new Gafanhoto[2];
-        gafanhoto[0] = new Gafanhoto("nome@gmail.com", "senha123", 10);
+        Viewing visualizacao = new Viewing(person, film);
+        Viewing visualizacao1 = new Viewing(person, film1);
+        System.out.println(visualizacao1.toString());
 
-        System.out.println(Arrays.toString(vetorVideos));
 
 
 
@@ -20,4 +17,4 @@ public class App {
 
 
     }
-} */
+} 

@@ -15,8 +15,8 @@ public class Video implements VideoActions {
 
     }
 
-    public Video(){
-        this.title = "";
+    public Video(String video){
+        this.title = video;
         this.rating = Rating.REGULAR;
         this.views = 0;
         this.likes = 0;
@@ -93,7 +93,7 @@ public class Video implements VideoActions {
 
     @Override
     public String toString(){
-        return "Video\n: title" + title + "rating:" + rating;
+        return getTitle();
 
 
     }
