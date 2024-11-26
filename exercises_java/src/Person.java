@@ -49,4 +49,10 @@ public abstract class Person {
             return this.name().toLowerCase();
         }
     }
+
+
+    @Override
+    public String toString(){
+        return getName();
+    }
 }
